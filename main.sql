@@ -4,7 +4,7 @@
 .mode column
 -- Don't change lines 1 to 5
 
-.print H CS 2019 Task 1B
+.print H CS 2019 Task 1 Part B
 
 .print
 .print Q1b(i)
