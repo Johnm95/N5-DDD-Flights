@@ -1,7 +1,10 @@
 -- Don't change lines 1 to 6
-.open FlightBooking.db
+.open Flights.db
 .headers on
 .mode column
 PRAGMA foreign_keys = on;
 -- Don't change lines 1 to 6
 
+SELECT *
+    FROM Route, Airport
+    WHERE Airport.code = Route.departFrom;

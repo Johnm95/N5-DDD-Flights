@@ -1,14 +1,31 @@
-# H CS 2019 Task 1 Part B
+# N5 DDD Flights
 
-### Database design and development
+## Introduction
 
-Following further analysis the entity-relationship diagram below is created.
+Loganair has decided to expand where it flies to.  To save on costs it works with another small airline that already has a booking system that it can mak use of.
+
+The design of the database is shown below.
 
 ![ERD](assets/ERD.png)
 
-This design is then implemented.
+Every airport has a 3-letter code to identify it, i.e. `BRR` is the code for Barra , and `LHR` is the code for London Heathrow.
 
-![Table](assets/Table.png)
+The database contains a number of routes.  Every route holds the airport code for the depature airport (`depCode`) and the code for the arrival airport (`arrCode`).
+
+Some routes stop at other airports on the way.  if there are any stops, then `mid1code`, and possibly `mid2code` will contain sirport codes.
+
+If there are no stops, then `mid1code` and `mid2code` will hold a special value of `NULL` to show that they are empty.
+
+## Tasks
+
+Using the Airport table, display all the details for Glasgow airport (GLA).
+
+Using the Route table, display all the details for routes that depart from Glasgow.
+
+Barra, United Kingdom, BRR, Europe
+
+___1___ Currently, the Barra (BRR) to Glasgow (GLA) route is not in the database.
+
 
 ___1b(i)___ John Smith, Customer ID - GR01932, has asked for a copy of the tax he has paid on flight QH182. The tax for a booking is calculated as follows:
 
