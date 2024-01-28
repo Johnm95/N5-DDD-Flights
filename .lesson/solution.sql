@@ -1,31 +1,24 @@
--- Don't change lines 1 to 5
-.open FlightBooking.db
+-- Don't change lines 1 to 6
+.open Flights.db
 .headers on
 .mode column
--- Don't change lines 1 to 5
-
-.print H CS 2019 Task 1 Part B
-
-.print
-.print Q1b(i)
-SELECT forename, surname, adultTicket * 5.5 
-    + childTicket * 2 
-    + concessionTicket * 1.5 AS [Tax (£)]
-    FROM booking, customer
-    WHERE booking.customerID = "GR01932"
-        AND flightID = "QH182"
-        AND booking.customerID = customer.customerID;
-
+PRAGMA foreign_keys = on;
+-- Don't change lines 1 to 6
 
 .print
-.print Q1b(ii)
-CREATE TEMP VIEW maxKids (maxNumber) AS
-    SELECT MAX(childTicket)
-        FROM booking;
+.print Q1
+SELECT *
+    FROM Airport
+    WHERE code = "GLA";
 
-SELECT forename, surname
-    FROM customer, booking, maxKids
-    WHERE customer.customerID = booking.customerID
-        AND childTicket = maxNumber;
+.print
+.print Q2
+SELECT *
+    FROM Route
+    WHERE depCode = "GLA";
+
+
+
+
 
 .print

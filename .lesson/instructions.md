@@ -56,7 +56,7 @@ ___10___ The 'Lego Express' will use a route that will depart Barra for Billund 
 
 ___11___ Add the return journey.
 
-___12___ Add a Barra to Glasgow flight to the Table using the following details:
+___12___ Add a Barra to Glasgow flight to the Flight table using the following details:
 
 ```
 flightID: LM0456
@@ -68,5 +68,12 @@ capacity: 18
 routeID: 8000
 ```
 
+___12___ Add the return flight, LM0451, on 4<sup>th</sup> Feb 2024.  It will depart Galsgow at 1015 am, and land at 1130 am.
 
-___1___ Find your details in the Customer table.  Take a note of your `customerID`.
+___13___ Using the Flight and Route tables, display the following details for flights LM0456 amd LM0451:
+
+| flightID | depCode | arrCode | depDate | depTime | arrTime |
+| -------- | ------- | ------- | ------- | ------- | ------- |
+|          |         |         |         |         |         |
+
+___99___ Find your details in the Customer table.  Take a note of your `customerID`.
