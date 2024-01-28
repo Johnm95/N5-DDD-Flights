@@ -5,6 +5,3 @@
 PRAGMA foreign_keys = on;
 -- Don't change lines 1 to 6
 
-SELECT *
-    FROM Route, Airport
-    WHERE Airport.code = Route.departFrom;
