@@ -34,29 +34,37 @@ Add Barra (BRR) to the airport table using the the following details:
 "Barra", "United Kingdom", "BRR", "Europe"
 ```
 
-___5___ The Barra (BRR) to Glasgow (GLA) route is not in the database.  There are no stops in between.  Add the route using the following values:
+___5___ Display all the information that was just added.
+
+___6___ The Barra (BRR) to Glasgow (GLA) route is not in the database.  There are no stops in between.  Add the following values to the ROute table:
 
 ``` sql
 8000, "BRR", "GLA", NULL, NULL
 ```
 
-___6___ Add the return journey so that people can get home.  Use the next number for the `routeID`.
+___7___ Add the return journey so that people can get home.  Use the next number for the `routeID`.
 
-___7___ Loganair wants to expand its reach in the UK.  Add a route that flies from Barra to Bristol with stops at Glasgow and then Birmingham.
+___8___ Display all the information that was added for the two routes.
 
-___8___ Add the return route.
+___9___ Loganair wants to expand its reach in the UK.  Add a route that flies from Barra to Bristol with stops at Glasgow and then Birmingham.
 
-___9___ Loganair is thinking about adding routes that go to Denmark.  Display the following information for all airports in Denmark.
+___10___ Add the return route.
+
+___11___ Display all the information that was added for the two routes.
+
+___12___ Loganair is thinking about adding routes that go to Denmark.  Display the following information for all airports in Denmark.
 
 | name | code |
 | ---- | ---- |
 |      |      |
 
-___10___ The 'Lego Express' will use a route that will depart Barra for Billund in Denmark, going via Glasgow.
+___13___ Add a route for the 'Lego Express' that will depart Barra for Billund in Denmark, going via Glasgow.
 
-___11___ Add the return journey.
+___14___ Add the return journey.
 
-___12___ Add a Barra to Glasgow flight to the Flight table using the following details:
+___15___ Display all the information that was added for the two routes.
+
+___16___ Add a Barra to Glasgow flight to the Flight table using the following details:
 
 ```
 flightID: LM0456
@@ -68,12 +76,6 @@ capacity: 18
 routeID: 8000
 ```
 
-___12___ Add the return flight, LM0451, on 4<sup>th</sup> Feb 2024.  It will depart Galsgow at 1015 am, and land at 1130 am.
+___17___ Add the return flight, LM0451, on 4<sup>th</sup> Feb 2024.  It will depart Galsgow at 1015 am, and land at 1130 am, and has the same number of seats.
 
-___13___ Using the Flight and Route tables, display the following details for flights LM0456 amd LM0451:
-
-| flightID | depCode | arrCode | depDate | depTime | arrTime |
-| -------- | ------- | ------- | ------- | ------- | ------- |
-|          |         |         |         |         |         |
-
-___99___ Find your details in the Customer table.  Take a note of your `customerID`.
+___18___ Display all the information that was added for the two flights.  Display the flights with the earliest flight first.
